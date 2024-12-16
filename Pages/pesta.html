@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesta</title>
+
+    <style>
+        
+     *   {
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(26, 25, 25);
+
+}
+
+
+
+.header{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+}
+.html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+.heading{
+    text-align: center;
+   margin-top: 30px;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    color:white
+}
+
+.heading span{
+    background: var(--main-color);
+    color:#000000;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    background: url(/image/ma.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .home-content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .home-content h1{
+    color:var(--text-color);
+    font-size: 3rem;
+
+}
+        body{
+            background-color: black;
+
+        }
+        .pesta{
+          color: azure;
+        }
+
+        .f-imge {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .f-imge a img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .f-imge a img:hover {
+            transform: scale(1.2) rotate(10deg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        hr{
+            color: white;
+        }
+    
+        footer {
+     background-color: rgb(27, 27, 27);
+     padding: 20px 0; 
+     border-top: 1px solid #e7e7e7;
+    } 
+ 
+ .footer-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1800px; 
+    margin: 0 auto;
+    padding: 0 20px; 
+    background-color: rgb(27, 27, 27);
+  
+  } 
+  
+.newsletter { 
+    flex: 1; 
+    min-width: 250px;
+    margin-bottom: 20px;
+   } 
+
+.newsletter h2 {
+     color: #23b163;
+      font-size: 24px; 
+    } 
+    
+.newsletter p { 
+    margin: 5px 0;
+    color: white;
+    margin-top: 10px;
+  } 
+  
+.newsletter form { 
+    display: flex;
+    margin-top: 10px;
+ } 
+ 
+.newsletter input[type="email"] {
+     padding: 10px; border: 1px solid #ccc; 
+     border-radius: 4px 0 0 4px; flex: 1;
+     margin-top: 10px;
+    } 
+    
+.newsletter button { 
+    padding: 10px 20px;
+    border: none; 
+    background-color: #23b163;
+    color: white; 
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+ } 
+ 
+ .social-media { 
+    flex: 1; 
+    min-width: 250px;
+    margin-bottom: 20px;
+ } 
+ 
+ .social-media p { 
+    margin-bottom: 10px;
+    color: white;
+ } 
+ 
+ .social-media a { 
+    margin-right: 10px;
+ } 
+ 
+ .footer-links { 
+    display: flex;
+    flex: 2; 
+    justify-content: space-between;
+    min-width: 250px; 
+    margin-bottom: 20px;
+ } 
+ 
+ .links-column {
+     display: flex; 
+     flex-direction: column;
+    } 
+    
+.links-column a { 
+    color: #23b163; 
+    text-decoration: none;
+    margin-bottom: 5px;
+ } 
+ 
+ .privacy-badge { 
+    flex: 1;
+    min-width: 150px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+ } 
+ 
+ .privacy-badge img {
+     max-width: 100px;
+    }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .linked {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @media (max-width: 1200px) {
+            .html{
+                font-size: 55%;
+            }
+            
+        }
+        @media (max-width: 991px) {
+            
+           .recipes img{
+                width: 90vw;
+            }
+        }
+        @media (max-width: 768px) {
+            .html{
+                font-size: 50%;
+            }
+
+            .recipes  img{
+                width: 70vw;
+            }
+        }
+        @media (max-width: 450px) {
+            .html{
+                font-size: 40%;
+            }
+
+            .recipes  img{
+                width: 60vw;
+            }
+        }
+        @media (max-width: 300px) {
+            .html{
+                font-size: 30%;
+            }
+
+            .recipes img{
+                width: 50vw;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <a href="/index.html">Home</a>
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 style="color: #e7dede;">Dinu Vegan Recipies</h1>
+            <h2></h2>
+        </div>
+    </section>
+    
+
+<section class="pesta">
+    <h1>Cheese Pesta</h1>
+   <div class="recipes">
+  
+   <img src="/image/ew.jpg" style="width: 1200px; height: 700px;" alt="">
+<div>
+    <div class="Ingredients">
+        
+
+        <h2>Ingredients</h2>
+    </div>
+
+   <ul>
+    <li>4 c. dried macaroni</li>
+    <li>1 egg</li>
+    <li>1/4 c. salted butter</li>
+    <li>1/4 c. all-purpose flour<li>
+       <li>2 1/2 c. whole milk</li> 
+        <li>2 heaping tsp. dry mustard, plus more to taste</li>
+        <li>1 lb. cheese (such as cheddar, jack, and/or fontina), grated</li>
+        <li>1/2 tsp. kosher salt, more to taste<li>
+            <li>1/2 tsp. seasoned salt, plus more to taste</li>
+            <li>1/2 tsp. ground black pepper</li>
+            <li>Cayenne pepper, paprika, and/or thyme (optional)</li>
+        </ul>
+    </div>
+        <br>
+        <div class="direction">
+        <h2>Directions</h2>
+
+    </div>
+        <br>
+
+        <ol>
+         <div class="step 1">
+                <li>
+                 Cook the macaroni until very firm. The macaroni should be too firm to eat right out of the pot. Drainli.
+                </li>
+                <br>
+        </div>
+            
+        <div class="step 2">
+                    <li>
+                    Beat the egg in a small bowl.
+                    </li><br>
+        </div>
+            
+       <div class="step 3">
+                    <li>
+                    Melt the butter in a large pot and sprinkle in the flour. Whisk together over medium-low heat. Cook the mixture for 5 minutes, whisking constantly. Don't let it burn. Pour in the milk, add the mustard, and whisk until smooth. Cook for 5 minutes until very thick. Reduce the heat to low.
+                    
+                    </li><br>
+      </div>
+                  
+     <div class="step 4">
+                    <li>
+                    Take 1/4 cup of the sauce and slowly pour it into the beaten egg, whisking constantly to avoid cooking the egg. Whisk together till smooth.
+                    </li><br>
+     </div>
+                
+     <div class="step 5">
+                    <li>
+                     Pour the egg mixture into the sauce, whisking constantly. Stir until smooth. Add in the cheese and stir to melt. Add the salt, seasoned salt, pepper, and other optional seasonings. Taste the sauce, adding more salt and seasoned salt as needed. (Do not under-salt!) Pour in the drained, cooked macaroni and stir to combine. Pour into a buttered baking dish, top with extra cheese, and bake at 350°F for 20 to 25 minutes, then serve.
+                    </li><br>
+     </div>
+                
+        </ol>
+
+        <br>
+        <div class="imges">
+        <video src="/video/Download.mp4" style="width: 700px;
+        height: 400px;" controls></video>
+<iframe width="700px" height="400px" src="https://www.youtube.com/embed/YxVZuuxxXxk?si=vPPE9JLQhCPVCnzQ&amp;start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div>
+
+      
+            <footer> 
+                <div class="footer-container"> 
+                    <div class="newsletter">
+                         <h2>Dinu Vegan Recipes</h2> 
+                         <p>Ready to cook?</p>
+                          <p>Sign up for our weekly newsletters!</p> 
+                          <form> 
+                            <input type="email" placeholder="Enter your email"> 
+                            <button type="submit">SIGN UP</button> 
+                          </form> 
+                        </div>
+                      <div class="social-media"> 
+                            <p>LET'S BE FRIENDS!</p> <a href="#">
+                                <img src="/image/Whatsapp-logo-icon-vector-PNG-removebg-preview (1).png" alt="Instagram" style="width: 60px; height: 60px;"></a> 
+                                <a href="https://www.instagram.com/"><img src="/image/1ed6e0a9e69176a5fdb7e090a1046b86-removebg-preview.png" alt="Instagram" style="width: 60px; height: 60px;"></a> 
+                                <a href="https://www.youtube.com/"><img src="/image/png-transparent-youtube-logo-youtube-logo-computer-icons-subscribe-angle-rectangle-airplane-removebg-preview.png" alt="YouTube" style="width: 80px; height: 65px;"></a>
+                             </div> 
+                             <div class="footer-links"> 
+                                <div class="links-column"> 
+                                    <a href="/Pages/koththu.html">Koththu Recipie</a>
+                                    <a href="/Pages/nuddels.html">Nuddles Recipie</a>
+                                    <a href="/Pages/pesta.html">Pasta Recipie</a>
+                                    <a href="/Pages/pizza.html">Pizza Recipie</a>
+                                    <a href="/Pages/rice.html">Rice Recipie</a>
+                                    <a href="/Pages/Cupcake.html">Cup Cake Recipie</a>
+                               </div> 
+                                    <div class="links-column"> 
+                                        <a href="/index.html">Home</a>
+                                        <a href="/index.html">About Us</a> 
+                                        <a href="/index.html">Terms of Service</a>
+                                        <a href="/index.html">Privacy Policy</a> 
+                                        <a href="/index.html">Contact</a> </div>
+                                    </div> 
+                                    <div class="privacy-badge">
+                                        <img src="/image/logoo-removebg-preview.png" alt="TRUSTe Certified Privacy" style="width: 95px; height: 95px;"> 
+                                    </div> 
+                                </div>
+                            </footer>
+</body>
+</html>
